@@ -48,8 +48,8 @@ export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Digital Scribbles</title>
-        <meta name="description" content="A blog tutorial made with JAMstack" />
+        <title>Pantomime</title>
+        <meta name="description" content="Sui generis." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
