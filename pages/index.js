@@ -50,14 +50,18 @@ export default function Home({ posts }) {
       <Head>
         <title>Pantomime</title>
         <meta name="description" content="Sui generis." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico?" />
       </Head>
-
+      <header className={styles.headerLogo}>
+        <div className={styles.logoContainer}>
+          <img src="/pantomime_logo_squashed.png"></img>
+        </div>
+        <p>Infila la mano, non morde mica.</p>
+      </header>
       <main className={styles.main}>
         {posts.map((post) => (
           <BlogCard
             title={post.title}
-            author={post.author}
             coverPhoto={post.coverPhoto}
             key={post.id}
             datePublished={post.datePublished}
